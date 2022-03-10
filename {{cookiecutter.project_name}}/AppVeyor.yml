@@ -1,0 +1,8 @@
+os: WMF 5
+skip_commits:
+  files:
+    README.md
+install:
+  - cinst pester -y
+test_script:
+  - ps: . .\Invoke-AppveyorBuild.ps1

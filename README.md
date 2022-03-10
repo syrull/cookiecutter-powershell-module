@@ -1,6 +1,15 @@
 # Powershell Module Cookiecutter
 
-This is still a WIP.
+Aiming to build a fully automated generator for PowerShell Modules.
 
-TODO: 
-- Various builds such as Azure, GH Actions, App Veyor (currently planned).
+## Requirements
+
+- [cookiecutter](https://github.com/cookiecutter/cookiecutter)
+- [Python 3](https://www.python.org/downloads/)
+
+## Usage 
+
+```console
+# You will be prompted to type your values.
+$ cookiecutter https://github.com/syrull/cookiecutter-powershell-module
+```

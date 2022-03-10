@@ -1,4 +1,4 @@
-import subprocess, sys, os
+import subprocess, os
 from pathlib import Path
 
 
@@ -14,8 +14,26 @@ def generate_manifest():
         "-CompanyName",
         "'{{cookiecutter.company_name}}'",
         "-ModuleVersion",
-        "{{cookiecutter.version}}"
+        "{{cookiecutter.version}}",
+        "-RequiredModules",
+        "('Pester', 'PSScriptAnalyzer')"
     ]).communicate()
+
+def remove_appveyor_files():
+    file_names = [
+        "AppVeyor.yml",
+        "Invoke-AppveyorBuild.ps1"
+    ]
+    for file_name in file_names:
+        os.remove(file_name)
+
+def remove_azure_pipelines_files():
+    file_names = [
+        "{{cookiecutter.project_name}}.AzurePipelines.yml",
+    ]
+    for file_name in file_names:
+        os.remove(file_name)
+
 
 def main():
     generate_manifest()

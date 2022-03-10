@@ -1,0 +1,10 @@
+jobs:
+  - job: Build_PS_Win2016
+    pool:
+      vmImage: vs2017-win2016
+    steps:
+    - powershell: |
+        Install-Module -Name Pester -Repository PSGallery -Force -SkipPublisherCheck
+        .\Tests\{{cookiecutter.project_name}}.Tests.ps1
+      displayName: 'Run Pester Tests'
+  
