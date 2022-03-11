@@ -6,3 +6,6 @@ install:
   - cinst pester -y
 test_script:
   - ps: . .\Invoke-AppveyorBuild.ps1
+environment:
+  NuGetApiKey:
+    secure: 
