@@ -1,3 +1,6 @@
+[https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true](https://ci.appveyor.com/project/syrull/cookiecutter-powershell-module)
+
+
 # Powershell Module Cookiecutter
 
 Aiming to build a fully automated generator for PowerShell Modules.
