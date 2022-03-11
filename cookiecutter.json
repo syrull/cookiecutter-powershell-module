@@ -3,12 +3,15 @@
     "author": "",
     "company_name": "",
     "version": "1.0.0.0",
-    "use_AppVeyor": "y",
+    "ci_cd": [
+      "AppVeyor",
+      "Azure Pipelines"
+    ],
     "open_source_license": [
-        "MIT",
-        "BSD",
-        "GPLv3",
-        "Apache Software License 2.0",
-        "Not open source"
-      ]
+      "MIT",
+      "BSD",
+      "GPLv3",
+      "Apache Software License 2.0",
+      "Not open source"
+    ]
 }

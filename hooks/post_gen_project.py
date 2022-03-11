@@ -38,6 +38,11 @@ def remove_azure_pipelines_files():
 def main():
     generate_manifest()
 
+    if "{{cookiecutter.ci_cd}}" == "AppVeyor":
+        remove_azure_pipelines_files()
+    if  "{{cookiecutter.ci_cd}}" == "Azure Pipelines":
+        remove_appveyor_files()
+
 
 if __name__ == "__main__":
     main()
