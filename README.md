@@ -1,4 +1,4 @@
-[https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true](https://ci.appveyor.com/project/syrull/cookiecutter-powershell-module)
+[![Build status](https://ci.appveyor.com/api/projects/status/kuxiy9m0g19g04o0?svg=true)](https://ci.appveyor.com/project/syrull/cookiecutter-powershell-module)
 
 
 # Powershell Module Cookiecutter
