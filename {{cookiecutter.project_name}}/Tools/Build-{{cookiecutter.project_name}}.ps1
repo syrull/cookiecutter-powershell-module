@@ -25,7 +25,7 @@ foreach ($Module in $RequiredModules)
 {
     if ( -not (Get-Module -ListAvailable -Name $Module.ModuleName))
     {
-        Install-Module -Name $Module.ModuleName -Scope $Scope -Force -SkipPublisherCheck
+        Install-Module -Name $Module.ModuleName -Scope $Scope -RequiredVersion $Module.RequiredVersion -Force -SkipPublisherCheck 
     }
 }
 
